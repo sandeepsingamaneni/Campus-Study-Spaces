@@ -1,0 +1,44 @@
+<!--Study Spaces Details-->
+{% extends "layout.html" %}
+{% block content %}
+   <h3>Study Spaces Details</h3>
+   
+  
+    <table border="1">
+	   <thead>
+		   <tr>
+			   
+
+			   
+			   <th>Building name</th>
+			   <th>Building code</th>
+			   <th>Building floor</th>
+			   <th>Closest room number</th>
+			   <th>rating</th>
+	           </tr>
+           </thead>
+	   <tbody>
+                   {% for entry in entries %}
+		     
+		     <tr>
+                            
+			    
+			     
+
+	                    <td>{{ entry.building_name }}</td>
+			    <td>{{ entry.building_code }}</td>
+			    <td>{{ entry.building_floor }} </td>
+			    <td>{{ entry.room_number }}</td>
+			    <td>{{ entry.rating }}</td>
+		     </tr>	    
+      
+   		   {% endfor %}
+           </tbody>
+    </table>
+  
+  
+   
+   
+
+{% endblock %}
+   
