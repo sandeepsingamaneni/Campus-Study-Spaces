@@ -16,7 +16,7 @@ Route for creating/inserting a new entries via an HTML form.
 
 Model.py : An abstract model class that supports individual fields with varying data types to support the application and that is documented via Docstrings including parameters and return values with their types.
 
-model_datastore..py : A derived data model class that supports creation and reading of entries via a Cloud datastore database.
+model_datastore.py : A derived data model class that supports creation and reading of entries via a Cloud datastore database.
 
 app.py :  listens on port 5000 when called directly from Python.
 
